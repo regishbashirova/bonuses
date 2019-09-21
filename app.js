@@ -3,15 +3,10 @@ const purchaseAmount = 1000;
 const availableBonuses = 1000;
 
 const maxBonuses = purchaseAmount * 0.5;
-let appliedBonuses
-if (maxBonuses <= availableBonuses) {
-    appliedBonuses = maxBonuses;
-} else {
-    appliedBonuses = availableBonuses;
-}
+// тернарный оператор
+const appliedBonuses = maxBonuses <= availableBonuses ? maxBonuses : appliedBonuses = availableBonuses;
+
 console.log(appliedBonuses);
-
 const total = purchaseAmount - appliedBonuses;
-
 console.log(total);
 
